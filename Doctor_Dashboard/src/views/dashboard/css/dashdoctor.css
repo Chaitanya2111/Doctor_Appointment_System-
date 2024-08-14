@@ -1,0 +1,340 @@
+#dimg {
+  height: 250px;
+  /* width: 650px; */
+  width: 400px;
+  margin-right: -50px;
+  z-index: 1000;
+}
+
+#docimg {
+  margin-top: -253px;
+}
+
+#box {
+  background: #4080bf;
+  background: linear-gradient(0deg, #4080bf 35%, #b5d8fa 100%);
+}
+
+#box1 {
+  background: #4080bf;
+  background: linear-gradient(0deg,  #62abf3 35%, #dbebfa 100%);
+  width: "200px"
+}
+
+#box2 {
+  background: rgb(154, 179, 155);
+  background: linear-gradient(0deg, #62abf3 35%, #dbebfa 100%);
+}
+
+#box3 {
+  background: #4080bf;
+  background: linear-gradient(0deg, #62abf3 35%, #dbebfa 100%);
+}
+
+#box4 {
+  background: #abccec;
+  background: linear-gradient(0deg, #62abf3 35%, #dbebfa 100%);
+}
+
+::selection {
+  background: rgba(0, 0, 0, .05);
+}
+
+ul,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a,
+li,
+header nav span,
+article span {
+  text-decoration: none;
+  transition: all .25s ease-in-out;
+}
+
+/****/
+/* Left Bar */
+/****/
+nav.sections {
+  overflow: hidden;
+  display: block;
+  float: left;
+  width: 82px;
+  height: auto;
+  margin-right: 20px;
+  background: #3bc1f8;
+  box-shadow: 0 1px 1px rgba(78, 200, 247, .35);
+  border-radius: 5px;
+  /* text-aling: center; */
+}
+
+nav.sections li a {
+  display: block;
+  width: 100%;
+  height: 82px;
+}
+
+nav.sections li:hover,
+nav.sections li.active {
+  background: #00aced;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .07);
+}
+
+nav.sections li.notes a,
+nav.sections li.calendar a,
+nav.sections li.settings a {
+  background: url('http://ysfu.net/sprite.png') no-repeat;
+}
+
+nav.sections li.notes a {
+  background-position: 25px 25px;
+}
+
+nav.sections li.calendar a {
+  background-position: 25px -57px;
+}
+
+nav.sections li.settings a {
+  background-position: 25px -139px;
+}
+
+/****/
+/* Calendar */
+/****/
+section.mounth {
+  overflow: hidden;
+  display: block;
+  float: left;
+  width: 420px;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+  border-radius: 5px;
+}
+
+header {
+  position: relative;
+  display: block;
+  /* height: 80px; */
+  background: #e9eaf0;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .06);
+}
+
+header h1 {
+  margin-left: 30px;
+  line-height: 80px;
+}
+
+header nav {
+  overflow: hidden;
+  position: absolute;
+  display: block;
+  right: 30px;
+  top: 30px;
+}
+
+header nav span {
+  display: block;
+  float: left;
+  width: 11px;
+  height: 20px;
+  margin-left: 30px;
+  cursor: pointer;
+  background: url('http://ysfu.net/sprite.png') no-repeat;
+}
+
+header nav span:first-of-type {
+  background-position: -77px -4px;
+}
+
+header nav span:first-of-type:hover {
+  background-position: -106px -4px;
+}
+
+header nav span:last-of-type {
+  background-position: -90px -4px;
+}
+
+header nav span:last-of-type:hover {
+  background-position: -119px -4px;
+}
+
+article {
+  padding: 6px 0 25px 25px
+}
+
+article b,
+article span {
+  display: block;
+  float: left;
+  width: 45px;
+  height: 45px;
+  margin: 4px;
+  text-align: center;
+}
+
+article b {
+  font: 600 16px/45px 'Open Sans';
+  color: #91d9ff;
+}
+
+article span {
+  font: 300 19px/45px 'Open Sans';
+  color: #4c5373;
+  box-shadow: inset 0 0 1px 1px #d9dce5;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+article span.disable {
+  color: #b6bacc;
+  box-shadow: inset 0 0 1px 1px #f3f4f7;
+}
+
+article span:not(.disable):hover {
+  background: #cdd0dd;
+  box-shadow:
+    inset 0 0 1px 1px #d9dce5,
+    0 1px 3px -1px #cdd0dd;
+}
+
+article span:not(.disable):active {
+  background: #b9becf;
+  box-shadow:
+    inset 0 1px 2px rgba(0, 0, 0, .18),
+    0 0 0 #cdd0dd;
+}
+
+article span.active,
+article span.active:hover,
+article span.active:active {
+  color: #fff;
+  box-shadow:
+    inset 0 0 1px 1px #4080bf,
+    0 1px 3px -1px #4080bf;
+  background: #4080bf;
+}
+
+article div {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+/* Custom CSS */
+.custom-calendar {
+  height: 250px !important;
+}
+
+/* Custom CSS for the dropdown */
+.custom-dropdown {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+  color: #495057;
+  cursor: pointer;
+
+}
+
+/* Styling the options */
+.custom-dropdown option {
+  background-color: #fff;
+  color: #495057;
+}
+
+/* Hover effect for options */
+.custom-dropdown option:hover {
+  background-color: #e9ecef;
+}
+
+.appointment {
+  display: flex;
+  align-items: center;
+}
+
+.appointment .left {
+  flex: 0 0 auto;
+  /* To make sure the image doesn't shrink */
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.appointment .middle {
+  flex-grow: 1;
+  align-items: center;
+  padding: 5px;
+}
+
+.appointment .right {
+  flex: 0 0 auto;
+  /* To make sure the icon doesn't shrink */
+}
+
+.view-all-appointments {
+  color: rgb(163, 17, 241);
+  font-weight: 700;
+  font-size: 19px;
+}
+
+@media (max-width: 768px) {
+  #dimg {
+    height: 180px;
+    /* width: 650px; */
+    width: 300px;
+  margin-right: -160px;
+  margin-top: -50px;
+    z-index: 1000;
+  }
+  
+  .pname{
+    margin-left: -20px;
+  }
+
+  .body-chart {
+    overflow: auto;
+    /* Add scroll bar if content overflows */
+  }
+
+  .row {
+    margin-top: 0%;
+  }
+
+  .calenderr {
+ 
+
+    #box {
+      height: auto;
+      padding: 20px;
+    }
+
+    #docimg {
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+
+
+
+    .d-xl-none {
+      display: none !important;
+    }
+
+
+    #dimg {
+      display: none;
+    }
+
+
+    .text-white {
+      height: 300px;
+    }
+  }
+
+}

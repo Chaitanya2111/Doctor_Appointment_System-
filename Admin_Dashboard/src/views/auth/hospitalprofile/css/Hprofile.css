@@ -1,0 +1,23 @@
+#himg{
+    height: 400px;
+    width: 100%;
+}
+#hlogo{
+    height: 100px;
+    margin-top: -30px;
+    
+}
+
+@media (max-width: 410px) {
+    #himg{
+        height: 230px;
+        width: 100%;
+    }
+    #hlogo{
+        height: 70px;
+        width: 50%;
+        margin-top: -30px;
+        
+    }
+  }
+  

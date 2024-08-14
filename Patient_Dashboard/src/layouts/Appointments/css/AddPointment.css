@@ -1,0 +1,25 @@
+.form-label {
+    color: black;
+    font-weight: 550;
+    font-size: 19px;
+  }
+  
+  
+  .page-title-apoointment{
+    color: #0866f5;
+    font-weight: 600;
+    font-size:20px;
+    text-align: start;
+  }
+  
+  
+  .selected-time {
+    border-color: red; /* Adjust the styling as needed */
+  }
+  .booked-slot {
+    background-color: rgb(255, 0, 0) !important; /* Set the background color to red */
+    color: white !important; /* Set text color to white */
+    border-color: #f70202 !important; /* Set border color to a shade of red */
+  }
+  
+  

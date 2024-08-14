@@ -1,0 +1,27 @@
+.hospital-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust gap between cards as needed */
+    justify-content: space-between;
+  }
+  
+  .hospital-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    flex: 0 1 calc(33.333% - 16px); /* Adjust to have 3 cards per row */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hospital-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+  
+  .hospital-info span {
+    display: block;
+    margin-bottom: 4px;
+  }
+  

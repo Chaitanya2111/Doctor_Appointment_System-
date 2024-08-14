@@ -1,0 +1,126 @@
+.btn.btn-success.btn-block{
+    width: 100%;
+}
+.custom-input {
+    width: 100%;
+   
+}
+.input-with-icon {
+    position: relative;
+    height: 40px;
+}
+
+.input-with-icon .form-control {
+    padding-right: 40px; /* Adjust as needed */
+}
+
+.input-with-icon .calendar-icon {
+    position: absolute;
+    right: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure the icon does not interfere with input events */
+}
+
+.custom-input {
+    height: 50px;
+    border: 1px solid #ced4da; /* Bootstrap's default border color */
+    border-radius: 4px; /* Bootstrap's default border radius */
+    padding: 0.375rem 0.75rem; /* Bootstrap's default padding */
+    font-size: 1rem; /* Bootstrap's default font size */
+    line-height: 1.5; /* Bootstrap's default line height */
+    background-color: #fff; /* Background color */
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); /* Bootstrap's default box shadow */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    color:#ced4da;
+}
+
+.custom-input:focus {
+    border-color: #80bdff; /* Bootstrap's default focus border color */
+    outline: 0; /* Remove default outline */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Bootstrap's default focus box shadow */
+}
+.form-control.floating.datetimepicker{
+    height: 50px; /* Adjust as needed */
+    width: 100%; 
+    padding: 7px;
+}
+
+.calendar-icon{
+    font-size: 35px;
+    padding-top: 7px;
+}
+
+.avatar-container {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   
+   
+    text-align: center;
+    line-height: 40px; /* Center the text vertically */
+    font-size: 20px;
+    margin-right: 10px; /* Adjust spacing */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.designation {
+    color: #6c757d; /* Gray color for designation */
+}
+.custom-badge {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    width: 100px; /* Set the width to your preference */
+}
+
+/* Define colors for different status */
+.status-red {
+    background-color: rgb(247, 239, 239);
+    color: rgb(247, 8, 8);
+    border: 2px solid rgb(247, 8, 8);
+}
+.status-purple {
+    background-color: rgb(241, 235, 241);
+    color: darkorchid;
+    border: 2px solid darkorchid;
+}
+
+.status-green {
+    background-color: rgb(240, 245, 240);
+    color: darkgreen;
+    border: 2px solid darkgreen;
+}
+
+.status-yellow {
+    background-color: rgb(243, 243, 235);
+    color: goldenrod;
+    border: 2px solid goldenrod;
+}
+.status-sky {
+    background-color: rgb(228, 235, 238);
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: 1px solid #28a745;
+    color: #fff;
+  }
+
+  .btn.btn-success.float-right.btn-rounded{
+    float: right !important;
+  }

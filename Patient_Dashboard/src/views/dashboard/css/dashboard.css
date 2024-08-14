@@ -1,0 +1,215 @@
+.welcome-card {
+  background-color:#66a3ff; 
+  border-radius: 10px;
+}
+
+.report {
+  font-size: 21px;
+ font-weight: 550;
+  border-radius: 10px;
+  /* Add more styles as needed */
+}
+
+
+.image-container {
+  position: absolute;
+  top: -100;
+  right: 0;
+  width: 200px; /* Adjust the width of the image container */
+  height: 200px; /* Adjust the height of the image container */
+}
+
+.doctor-image {
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+body{
+  background-color: whitesmoke;
+}
+.information{
+  border-radius: 10px;
+}
+
+
+.custom-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.status-active {
+  border: 2px solid green;
+  background-color: lightgreen;
+  color: black; /* Adjust text color as needed */
+}
+
+.status-pending {
+  border: 2px solid orange;
+  background-color: lightyellow;
+  color: black; /* Adjust text color as needed */
+}
+
+.status-completed {
+  border: 2px solid blue;
+  background-color: lightblue;
+  color: black; /* Adjust text color as needed */
+}
+
+.status-upcoming {
+  border: 2px solid red;
+  background-color: lightcoral;
+  color: black; /* Adjust text color as needed */
+}
+/* dashboard.css */
+/* dashboard.css */
+
+/* Adjust the welcome-sub section for smaller screens */
+@media (max-width: 992px) {
+.welcome-sub {
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 20px; /* Add bottom margin for spacing */
+}
+
+.welcome-sub .information {
+  margin-bottom: 100px; 
+
+}
+}
+
+
+/* Make the appointment table responsive */
+@media (max-width: 768px) {
+/* Hide table header on small screens */
+.appointments-table thead {
+  display: none;
+}
+
+/* Adjust table row layout for small screens */
+.appointments-table tbody tr {
+  display: block;
+  margin-bottom: 20px; /* Add margin between table rows */
+  border: 1px solid #dee2e6; /* Add border for clarity */
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Hide table cell labels on small screens */
+.appointments-table tbody td::before {
+  display: none;
+}
+
+/* Show table cell labels only for screen readers */
+.appointments-table tbody td::after {
+  content: attr(data-label);
+  font-weight: bold;
+  margin-right: 5px;
+  color: #000;
+}
+}
+
+
+
+
+
+
+/* Add this CSS to your stylesheet */
+.note {
+margin-top: 10px;
+font-size: 18px;
+color: red;
+animation: zoomInOut 1s infinite alternate; /* Add animation */
+}
+
+button {
+position: relative;
+border: none;
+background: transparent;
+padding: 0;
+cursor: pointer;
+outline-offset: 4px;
+transition: filter 250ms;
+user-select: none;
+touch-action: manipulation;
+}
+
+.shadow {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 12px;
+background: hsl(0deg 0% 0% / 0.25);
+will-change: transform;
+transform: translateY(2px);
+transition: transform
+   600ms
+   cubic-bezier(.3, .7, .4, 1);
+}
+
+.edge {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 12px;
+background: linear-gradient(
+  to left,
+  hsl(0, 100%, 50%) 20%,      /* Red */
+  hsl(17, 100%, 50%) 53%,    /* Lighter red */
+  hsl(7, 100%, 50%) 96%,    /* Medium red */
+  hsl(24, 100%, 50%) 100%   /* Dark red */
+);
+
+}
+
+.front {
+display: block;
+position: relative;
+padding: 12px 27px;
+border-radius: 12px;
+font-size: 1.1rem;
+color: white;
+background: hsl(0, 100%, 50%);
+will-change: transform;
+transform: translateY(-4px);
+transition: transform
+   600ms
+   cubic-bezier(.3, .7, .4, 1);
+}
+
+button:hover {
+filter: brightness(110%);
+}
+
+button:hover .front {
+transform: translateY(-6px);
+transition: transform
+   250ms
+   cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .front {
+transform: translateY(-2px);
+transition: transform 34ms;
+}
+
+button:hover .shadow {
+transform: translateY(4px);
+transition: transform
+   250ms
+   cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .shadow {
+transform: translateY(1px);
+transition: transform 34ms;
+}
+
+button:focus:not(:focus-visible) {
+outline: none;
+}

@@ -1,0 +1,10 @@
+#post{
+    margin: 15px;
+    font-size: large;
+    border: none;
+    background: transparent;
+    color: gray;
+}
+#d1{
+    display: inline;
+}

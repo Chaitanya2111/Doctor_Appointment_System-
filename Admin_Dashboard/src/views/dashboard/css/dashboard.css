@@ -1,0 +1,151 @@
+/* Bar styles */
+.bar-chart > .chart > .item > .bar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #99ffeb; /* Default background color for bars */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align text to the right */
+    padding-right: 5px; /* Add padding for text */
+}
+
+/* Progress bar styles */
+.bar-chart > .chart > .item > .bar > .item-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #00b38f; /* Default background color for progress bars */
+    z-index: 10;
+}
+
+/* Percentage text styles */
+.bar-chart > .chart > .item > .bar > .item-progress > .percent {
+    color: #0c0c0c; /* Text color */
+    font-size: 12px; /* Font size */
+
+}
+.percent{
+    color: #000;
+}
+/* Legend styles */
+.bar-chart > .legend > .item {
+    position: relative;
+    display: inline-block;
+    width: 25%;
+}
+
+.bar-chart > .legend {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    margin-bottom: -45px;
+    border-top: 1px solid #000;
+}
+
+/* General styles */
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+
+.bar-chart > .chart > .item {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.bar-chart > .legend > .item h4 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.h4, h4 {
+    font-size: 1.5rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.bar-chart > .legend > .item:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 1px; /* Width of the divider */
+    height: 8px; /* Height of the divider */
+    background-color: #000; /* Color of the divider */
+    margin-top: -10px; /* Adjust the margin to position the divider */
+}
+
+/* Positioning the labels for Hospital Management */
+.hospital-wrapper {
+    position: relative;
+    background-color: white;
+    height: 375px;
+    margin-top: 40px;
+}
+
+.hospital-barchart {
+    position: absolute;
+    bottom: 100%; /* Position the labels above the bar chart */
+    left: 0;
+  
+    width: 100%;
+    text-align: start; /* Align the labels to the start */
+}
+
+.hospital-barchart .card-title {
+    font-size: 1.5rem;
+    color: #000;
+    text-align: start;
+margin-bottom: 10px;
+
+}
+
+  /* Adjust the height of all bars */
+  .bar-chart > .chart > .item > .bar {
+      height: 50px; /* Adjust the height as needed */
+  }
+  
+  /* Maintain spacing between bars */
+  .bar-chart > .chart > .item {
+      margin-bottom: 20px; /* Adjust the spacing between bars */
+  }
+  /* Add gap between bars */
+.bar-chart > .chart > .item {
+    margin-bottom: 40px; /* Adjust the spacing between bars */
+}
+
+/* Add gap between bars (alternative approach) */
+.bar-chart > .chart > .item:not(:last-child) {
+    margin-bottom: 40px; /* Adjust the spacing between bars */
+}
+/* Title styles */
+.bar-chart > .chart > .item > .bar > .item-progress > .title {
+    font-weight: 900; /* Make the title bold */
+    text-align: center; /* Center align the title */
+    align-items: center;
+ font-size: 20px;
+    letter-spacing: 2px;
+}

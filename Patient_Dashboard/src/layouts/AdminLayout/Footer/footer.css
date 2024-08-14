@@ -1,0 +1,52 @@
+/* Footer container */
+footer {
+  /* Change the background color as needed */
+  padding: 20px 0;
+  /* Adjust padding as needed */
+
+}
+
+.footermain {
+  margin-left: 280px;
+  margin-right: 10px;
+
+}
+
+@media (max-width: 410px) {
+  .footermain {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .fcontainer {
+    height: 80px;
+  }
+}
+
+
+/* Copyright text */
+footer p {
+
+  font-weight: 500;
+  font-size: 16px;
+  /* Adjust font size as needed */
+  color: #ffffff;
+  /* Adjust text color as needed */
+  margin-bottom: 10px;
+  /* Adjust margin as needed */
+}
+
+/* Social media icons */
+.media a {
+
+  font-weight: 500;
+
+
+}
+
+.fcontainer {
+  padding: 10px;
+  background-color: #66a3ff;
+
+
+}

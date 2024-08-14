@@ -1,0 +1,44 @@
+
+
+  .datetimepicker {
+    width: 100%;
+  }
+  
+  .input-with-icon {
+    position: relative;
+  }
+  
+  .input-with-icon .form-control {
+    padding-right: 40px; /* Adjust as needed */
+  }
+  
+  .input-with-icon .calendar-icon {
+    position: absolute;
+    right: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px; /* Adjust icon size as needed */
+    color: #aaa; /* Adjust icon color as needed */
+    pointer-events: none; /* Ensure the icon does not interfere with input events */
+  }
+  
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  .submit-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }

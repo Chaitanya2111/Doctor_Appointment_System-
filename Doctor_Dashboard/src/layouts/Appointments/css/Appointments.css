@@ -1,0 +1,66 @@
+.icon-view {
+    color: blue;
+  }
+  
+  .icon-edit {
+    color: green;
+  }
+  
+  .icon-delete {
+    color: red;
+  }
+  
+  /* Appointments.css */
+
+/* Appointments.css */
+
+.icon-container {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.1s;
+  }
+  
+  .icon-container:hover {
+    transform: scale(1.1); /* Increase scale on hover */
+    background-color: #333; /* Darken background color on hover */
+  }
+  
+  .btn:hover .icon-container i {
+    color: white; /* Change icon color to white on hover */
+  }
+  /* Filters.css */
+.filters-container {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.filters-container label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#status-filter {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  color: #333;
+  width:"50px";
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#status-filter:focus {
+  border-color: #007BFF;
+}
+
+#status-filter option {
+  background-color: #fff;
+  color: #333;
+}
+
